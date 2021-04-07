@@ -21,6 +21,6 @@ def first1():
     return "Goodbye"
 
 @app.route('/second')
-def second11():
+def second1():
     d=['Sam','Vishal','Mohan','Sai Kiran']
     return render_template("second1.html",name=d)
