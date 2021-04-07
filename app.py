@@ -1,5 +1,5 @@
 import datetime
-from flask import Flask,render_template
+from flask import Flask,render_template,request
 
 app=Flask(__name__)
 
@@ -40,3 +40,13 @@ def navigation1():
 @app.route('/nav2')
 def navigation2():
     return render_template("navigation2.html")
+
+
+@app.route('/form1')
+def form1():
+    return render_template("form1.html")
+
+@app.route('/form2',methods=["POST"])
+def form2():
+    name=request.form.get("name")
+    return render_template("hello.html",name=name)
