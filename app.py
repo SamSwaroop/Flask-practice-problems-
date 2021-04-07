@@ -32,3 +32,11 @@ def Nav1():
 @app.route('/URL2')
 def Nav2():
     return render_template("URLnav2.html")
+
+@app.route('/nav1')
+def navigation1():
+    return render_template("navigation1.html")
+
+@app.route('/nav2')
+def navigation2():
+    return render_template("navigation2.html")
