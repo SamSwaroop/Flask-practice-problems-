@@ -24,3 +24,11 @@ def first1():
 def second1():
     d=['Sam','Vishal','Mohan','Sai Kiran']
     return render_template("second1.html",name=d)
+
+@app.route('/URL1')
+def Nav1():
+    return render_template("URLnav1.html")
+
+@app.route('/URL2')
+def Nav2():
+    return render_template("URLnav2.html")
