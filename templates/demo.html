@@ -1,0 +1,52 @@
+{% extends "register.html" %}
+
+{% block body %}
+
+<div class="container register-form" style="align-items: center;">
+    <div class="form">
+        <div class="note">
+            <h1>Registration Form</h1>
+        </div>
+
+        <div class="form-content">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Username *" value="" name=" " required/>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Email ID*" value="" required/>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Phone Number" value=""/>
+                    </div>
+                </div>
+                <br>
+                <br>
+
+                <div class="col-md-6" style="padding-right: 90px;">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Date of Birth" value="" />
+                    </div>
+                    <br>
+                    <br>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Password*" value="" required/>
+                    </div>
+                </div>
+                <br>
+                <br>
+            </div>
+            <div style="padding-left: 450px;"><button type="button" class="btnSubmit">Register</button></div>
+        </div>
+    </div>
+    <div style="padding-left: 530px;"><button type="button" class="btnSubmit1" style="text-decoration: none;"><a href="{{ url_for('Nav1')}}" > Go back </button></div>
+</div>
+    </div>
+</div>
+
+{% endblock %}
